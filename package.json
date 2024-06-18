@@ -17,6 +17,8 @@
     "vue-router": "^4.3.3"
   },
   "devDependencies": {
-    "@types/bootstrap": "^5.2.10"
+    "@types/bootstrap": "^5.2.10",
+    "postcss": "^8.4.38",
+    "rtlcss": "^4.1.1"
   }
 }

@@ -9,10 +9,27 @@ export default defineNuxtConfig({
       },
     },
   },
+
   devtools: { enabled: true },
+
   alias: {},
+
   css: ["~/assets/scss/style.scss"],
-  plugins: [
-    '~/plugins/bootstrap.client',
-  ]
+
+  plugins: ["~/plugins/bootstrap.client"],
+
+  app: {
+    head: {
+      htmlAttrs: {
+        lang: "fa",
+        dir: "rtl",
+      },
+    },
+  },
+
+  postcss: {
+    plugins: {
+      rtlcss: {},
+    },
+  },
 });

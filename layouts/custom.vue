@@ -1,5 +1,6 @@
 <template>
     <div>
+        <Html data-bs-theme="dark"></Html>
         <p>Some default layout content shared across all pages</p>
         <slot />
     </div>
