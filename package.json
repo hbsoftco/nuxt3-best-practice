@@ -10,9 +10,17 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxtjs/supabase": "^1.2.2",
+    "@pinia/nuxt": "^0.5.1",
+    "@prisma/client": "^5.15.1",
+    "@vite-pwa/nuxt": "^0.8.0",
     "bootstrap": "^5.3.3",
     "nuxt": "^3.12.2",
+    "nuxt-icon": "^0.6.10",
+    "pinia": "^2.1.7",
+    "prisma": "^5.15.1",
     "sass": "^1.77.6",
+    "uuid": "^10.0.0",
     "vue": "^3.4.29",
     "vue-router": "^4.3.3"
   },
