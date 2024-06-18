@@ -1,7 +1,5 @@
 <template>
-  <div>
-     <h1>
-      hey guys
-     </h1>
+  <div class="container">
+    <NuxtPage />
   </div>
 </template>
