@@ -19,6 +19,7 @@ export default defineNuxtConfig({
   plugins: ["~/plugins/bootstrap.client"],
 
   app: {
+    pageTransition: { name: "page", mode: "out-in" },
     head: {
       htmlAttrs: {
         lang: "fa",
