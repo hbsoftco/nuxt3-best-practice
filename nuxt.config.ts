@@ -10,8 +10,6 @@ export default defineNuxtConfig({
     },
   },
 
-  pages: true,
-
   modules: [
     "nuxt-icon",
     // "@nuxtjs/supabase",
@@ -35,9 +33,9 @@ export default defineNuxtConfig({
 
   pwa: {
     manifest: {
-      name: "HBSOFT",
-      short_name: "HBSOFT",
-      description: "This is a HBSOFT project test",
+      name: "hbsoft test app",
+      short_name: "hbsoft",
+      description: "This is a hbsoft project test",
       theme_color: "#000000",
       icons: [
         {
@@ -49,6 +47,12 @@ export default defineNuxtConfig({
           src: "pwa-512x512.png",
           sizes: "512x512",
           type: "image/png",
+        },
+        {
+          src: "pwa-192x192.png",
+          sizes: "192x192",
+          type: "image/png",
+          purpose: "any maskable",
         },
       ],
     },
@@ -63,17 +67,33 @@ export default defineNuxtConfig({
     layoutTransition: { name: "layout", mode: "out-in" },
     head: {
       charset: "utf-8",
-      viewport: "width=device-width, initial-scale=1, maximum-scale=1",
+      viewport:
+        "width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes",
       htmlAttrs: {
         lang: "fa",
         dir: "rtl",
       },
+      title: "hbsoft test app",
+      meta: [
+        { name: "theme-color", content: "#000000" },
+        {
+          hid: "description",
+          name: "description",
+          content: "Your description here",
+        },
+      ],
     },
   },
 
   postcss: {
     plugins: {
       rtlcss: {},
+    },
+  },
+
+  nitro: {
+    prerender: {
+      autoSubfolderIndex: false,
     },
   },
 });
